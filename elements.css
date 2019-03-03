@@ -1,0 +1,1284 @@
+body{
+    display:flex;
+    width:100%;
+    height:2100px;
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+aside{
+    width:23%;
+    background-color:#eff1f2;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    position:relative;
+    float:left;
+    
+  
+}
+aside .input {
+    width:308px;
+    height:111px;
+    background-color:rgb(222,228,233);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside .input input{
+    width:250px;
+    height:50px;
+    border-radius:8px;
+    outline:none;
+    border:0.08em solid rgb(161,161,161)
+}
+aside .input input:focus{
+    border-color:red;
+}
+
+aside i{
+    position:absolute;
+    right:39px;
+    top:27px;
+    color:gray;
+}
+aside .menu{
+    width:250px;
+    height:550px;
+    margin-top:32px;
+}
+aside .menu h2{
+    font-family: Arial, Helvetica, sans-serif;
+    width:65px;
+    border-bottom:3px solid red;
+}
+aside .menu nav {
+  display:flex;
+  flex-direction: column;
+  height:474px;
+  line-height: 3;
+  margin-top:22px;
+}
+
+aside .menu nav a {
+    color:rgb(56, 55, 55);
+    text-decoration:none;
+    font-size:15px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom:2px solid rgb(209, 178, 178);
+}
+aside .menu nav a:hover{
+    color:red;
+}
+.image{
+    width:250px;
+    height:1511px;
+    display:flex;
+    flex-direction: column;
+    margin-top:40px;
+}
+.image h2{
+    margin-bottom:22px;
+    width:152px;
+    border-bottom:5px solid red;
+}
+.image .first{
+    width:100%;
+    height:500px;
+    line-height:1.5;
+
+}
+.image .first p{
+    width:250px;
+    border-bottom:2px solid rgb(209, 178, 178);
+    line-height:2;
+    color:gray
+
+}
+.image .second{
+    width:100%;
+    height:450px;
+    line-height:1.5;
+}
+.image .second p{
+    width:250px;
+    border-bottom:2px solid rgb(209, 178, 178);
+    line-height:2;
+    color:gray;
+}
+.image .third{
+    width:100%;
+    height:500px;
+    line-height:1.5;
+   
+}
+.image .third p{
+    width:250px;
+    line-height:2;
+    color:gray;
+}
+.image .third span{
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:red;
+}
+.image .first>div{
+    width:250px;
+    height:180px;
+    border-radius:5px;
+    overflow:hidden;
+   
+}
+.image .first img{
+    width:100%;
+    height:100%;
+    border-radius:5px;
+}
+.image .first .first1 img:hover{
+    transform: scale(1.2,1.2);
+    transition: all 0.5s ease-in;
+}
+.image .second>div{
+    width:250px;
+    height:180px;
+    border-radius:5px;
+    overflow:hidden;
+}
+.image .second img{
+    width:100%;
+    height:100%;
+    border-radius:5px;
+}
+.image .second img:hover{
+    transform: scale(1.2,1.2);
+    transition: all 0.5s ease-in;
+}
+.image .third>div{
+    width:250px;
+    height:180px;
+    border-radius:5px;
+    overflow:hidden;
+}
+.image .third img{
+    width:100%;
+    height:100%;
+    border-radius:5px;
+}
+.image .third img:hover{
+    transform: scale(1.2,1.2);
+    transition: all 0.5s ease-in;
+}
+
+.footer{
+    width:250px;
+    height:600px;
+    display:flex;
+    justify-content:space-around;
+    flex-direction: column;
+    margin-top:50px;
+    color:gray;
+}
+.footer h2{
+    width:130px;
+    border-bottom:2px solid red;
+    margin-top:32px;
+}
+.footer ul{
+    display:flex;
+    justify-content: center;
+    flex-direction:column; 
+}
+
+.footer ul li{
+    display:flex;
+    flex-direction: row;
+    align-items:space-around;
+    line-height: 2.2;
+}
+.footer ul li>a{
+    font-size:18px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    margin-right:12px;
+}
+.footer ul li>a:hover{
+    color:red;
+    text-decoration:underline;
+}
+.footer ul>li{
+    border-bottom:2px solid rgb(209, 178, 178);
+}
+.Container{
+    width:77%;
+    height: 4300px;
+    background-color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:75px;
+    float:left;
+}
+.Container header{
+    width:85%;
+    height:40px;
+    display:flex;
+    justify-content: space-between;
+    padding:0px;
+    margin:0px;
+    border-bottom:5px solid rgb(184, 30, 30);
+    margin-bottom:50px;
+}
+.Container header a{
+    color:black;
+    text-decoration:none;
+    font-size:25px;
+}
+.Container header a:hover{
+    color:red;
+}
+
+.Container header section{
+    font-size:23px;
+    color:gray;
+}
+
+.Container main{
+    width:85%;
+    height:4300px;
+    display:flex;
+    flex-direction: column;
+}
+.Container main .intro{
+    width:100%;
+    height:900px;
+    display:flex;
+    flex-direction: column;
+    border-bottom:2px solid gray;
+
+}
+.Container main .title{
+    font-size:35px;
+    color:rgb(46, 44, 44);
+    width:170px;
+    height:120px;
+}
+.Container main .contentfirst {
+    width:100%;
+    height:150px;
+}
+.Container main .contentfirst>h2{
+    font-size:25px;
+    color:rgb(46, 44, 44);
+    margin-bottom:12px;
+}
+.Container main .contentfirst>p{
+    color:gray;
+    width:800px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Container main .contentsecond {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    margin-top:22px;
+}
+.Container main .contentsecond h2 {
+    font-size:20px;
+    color:rgb(46, 44, 44);
+    margin-bottom:12px;
+}
+.Container main .contentsecond p {
+    color:gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Container main .contentthird{
+    width:100%;
+    height:390px;
+    display:flex;
+    flex-direction: row;
+    margin-top:100px;
+    
+}
+.Container main .contentthird h2 {
+    font-size:20px;
+    color:rgb(46, 44, 44);
+    margin-bottom:12px;
+}
+.Container main .contentthird p {
+    color:gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Container main .elements{
+    width:100%;
+    margin-top:50px;
+    
+
+}
+.Container main .elements .leftelements{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    float:left;
+    
+}
+.Container main .elements .leftelements .basic{
+    height:550px;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.Container main .elements h1{
+    font-size:32px;
+    color:rgb(32, 32, 32);
+    
+}
+.Container main .elements .leftelements .basic .first{
+    border-bottom:1px solid gray;
+    height:180px;
+    margin-top:23px;
+}
+.Container main .elements .leftelements .basic .first h3{
+    font-size:22px;
+    color:rgb(32, 32, 32);
+    margin-bottom:12px;
+}
+.Container main .elements .leftelements .basic .first p{
+    color:gray;
+    line-height: 1.5;
+    font-size:17px;
+}
+.Container main .elements .leftelements .basic .first b,strong{
+    color:black;
+}
+.Container main .elements .leftelements .basic .first input{
+    border-radius:5px;
+    width:150px;
+    height:23px;
+    font-size:15px;
+}
+.Container main .elements .leftelements .basic .first a{
+    color:rgb(231, 54, 54);
+}
+.Container main .elements .leftelements .basic .first code{
+    background-color: #f2f2f2;
+    border:2px solid rgb(241, 233, 233);
+    border-radius:5px;
+    font-size:13px;
+}
+
+.Container main .elements .leftelements .basic .second{
+    border-bottom:1px solid gray;
+    height:180px;
+}
+.Container main .elements .leftelements .basic .second{
+    line-height:2.5;
+    color:rgb(31, 30, 30);
+}
+.Container main .elements .leftelements .basic .third{
+    height:180px;
+}
+.Container main .elements .leftelements .basic .third p{
+    color:gray;
+    font-size:18px;
+    margin-top:20px;
+}
+
+.Container main .elements .leftelements .list{
+    height:470px;
+    width:100%;
+}
+.Container main .elements .leftelements .list h1{
+    font-size:22px;
+    color:rgb(43, 42, 42);
+    margin-bottom:23px;
+}
+.Container main .elements .leftelements .list h2{
+    font-size:20px;
+    color:rgb(43, 42, 42);
+    margin-bottom:15px; 
+}
+.Container main .elements .leftelements .list .all{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Container main .elements .leftelements .list .all li{
+    color:gray;
+    font-size:18px;
+    line-height: 1.5;
+    width:150px;
+}
+.Container main .elements .leftelements .list .all p{
+    color:gray;
+    font-size:18px;
+    line-height:2;
+    border-bottom:1px solid rgb(141, 130, 130);
+}  
+.Container main .elements .leftelements .list .all span{
+    color:gray;
+    font-size:18px;
+    line-height:2;  
+}
+.all .left .alt{
+    margin-top:33px; 
+}
+.all .right .icon h2{
+    margin-top:22px;
+}
+.all .right .icon i{
+    color:gray;
+    font-size:20px;
+    margin-right:10px;
+}
+.all .right .icon i:hover{
+    color:rgb(236, 58, 58);
+}
+.leftelements .defination{
+    width:100%;
+    height:500px;
+}
+.leftelements .defination h2{
+    color:rgb(39, 37, 37);
+    font-size:22px;
+    margin-bottom:17px;
+}
+
+.leftelements .defination .allcontent{
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.leftelements .defination .allcontent h4,p{
+    color:gray;
+  
+
+}
+.leftelements .defination .allcontent p{
+    width:360px;
+    margin-left:30px;
+}
+
+.leftelements .defination .allcontent h4{
+    margin-bottom:17px;
+}
+
+.leftelements .act{
+    width:100%;
+    height:480px;
+   
+}
+.leftelements .act .leftact{
+    width:50%;
+    height:450px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    float:left;
+    
+
+}
+.leftelements .act .leftact .one{
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+.leftelements .act .leftact .one p{
+    margin-right:10px;
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 120px;
+    height: 45px;
+    background-color: rgb(236, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.leftelements .act .leftact .one span{
+    margin-right:10px;
+    color:rgb(238, 57, 57);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 120px;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.leftelements .act .leftact .two{
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+.leftelements .act .leftact .two p{
+    margin-right:10px;
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    background-color: rgb(236, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.leftelements .act .leftact .two span{
+    margin-right:10px;
+    color:rgb(238, 57, 57);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.leftelements .act .leftact .three{
+    display: flex;
+    flex-direction: column;
+
+    
+   
+}
+.leftelements .act .leftact .three p{
+    margin-right:10px;
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 120px;
+    height: 45px;
+    background-color: rgb(236, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:12px;
+    
+}
+.leftelements .act .leftact .three span{
+    margin-right:10px;
+    color:rgb(238, 57, 57);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 120px;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.leftelements .act .leftact .four{
+    display: flex;
+    flex-direction: column;
+    
+    
+   
+}
+.leftelements .act .leftact .four p{
+    margin-right:10px;
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 170px;
+    height: 45px;
+    background-color: rgb(236, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:12px;
+    
+}
+.leftelements .act .leftact .four span{
+    margin-right:10px;
+    color:rgb(238, 57, 57);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 170px;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.leftelements .act .rightact{
+    width:50%;
+    height:330px;
+    margin-top:130px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:space-around;
+}
+
+.leftelements .act .rightact .first{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:70px;
+
+}
+.leftelements .act .rightact .first p{
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    background-color: rgb(236, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:12px;
+    
+}
+.leftelements .act .rightact .first span{
+    color:rgb(238, 57, 57);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.leftelements .act .rightact .second{
+    display: flex;
+    flex-direction: column;
+
+}
+.leftelements .act .rightact .second p{
+    margin-right:10px;
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 170px;
+    height: 30px;
+    background-color: rgb(236, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:12px;
+    
+}
+.leftelements .act .rightact .second span{
+    margin-right:10px;
+    color:rgb(245, 86, 86);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 170px;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.leftelements .pag{
+    width:100%;
+    height:150px;
+}
+.leftelements .pag .titles h4{
+    font-size:25px;
+    color:rgb(41, 40, 40);
+    height:70px;
+}
+.leftelements .pag .alls{
+    width:100%;
+    height:60px;
+  
+}
+.leftelements .pag .alls ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.leftelements .pag .alls ul>li{
+    list-style-type: none;
+    color:red;
+}
+.leftelements .pag .alls ul>li:first-child{
+    color:rgb(245, 86, 86);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity:0.5;
+}
+.leftelements .pag .alls ul>li:last-child{
+    color:rgb(245, 86, 86);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftelements .pag .alls ul>li:nth-child(2){
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftelements .block{
+    width:100%;
+    height:250px;
+}
+
+.leftelements .block>h5{
+    font-size:25px;
+    margin-bottom:12px;
+}
+.leftelements .block>p{
+    color:gray;
+    width:360px;
+    padding:20px;
+    border-left:2px solid rgb(175, 168, 168);
+    font-style:italic;
+}
+.leftelements .tbl{
+    width:100%;
+    height:350px;
+}
+
+.leftelements .tbl h5{
+    font-size:20px;
+    color:rgb(39, 38, 38);
+    line-height:2;
+}
+.leftelements .tbl thead{
+    font-size:18px;
+    color:black;
+    font-style:italic;
+    background-color: white;
+
+}
+.leftelements .tbl tbody{
+    font-size:18px;
+    color:gray;
+    line-height:2.3;  
+}
+
+.leftelements .tbl tr:nth-child(odd){
+    background-color:#f2f2f2;
+}
+
+.leftelements .tbl tfoot{
+    font-size:18px;
+    color:gray;
+}
+.Container main .elements .rightelements{
+    width:50%;
+    display:flex;
+    flex-direction: column;  
+    padding:35px;
+}
+.elements .rightelements .button{
+    width:100%;
+    height:540px;
+    display:flex;
+    flex-direction: column;
+}
+.elements .rightelements .button h5{
+    font-size:30px;
+    color:rgb(41, 40, 40);
+    margin-bottom:12px;
+}
+.elements .rightelements .button .one{
+    display:flex;
+    flex-direction:row;
+    height:70px;
+
+}
+.elements .rightelements .button .one>p{
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    background-color: rgb(236, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.elements .rightelements .button .one>span{
+    color:rgb(236, 59, 59);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:12px; 
+}
+
+.elements .rightelements .button .two{
+    display:flex;
+    flex-direction:row;
+    height:70px;
+
+}
+.elements .rightelements .button .two>h4{
+    color:rgb(236, 59, 59);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 110px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.elements .rightelements .button .two>p{
+    color:rgb(236, 59, 59);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:12px;
+}
+.elements .rightelements .button .two>span{
+    color:rgb(236, 59, 59);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 70px;
+    height: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:12px; 
+}
+.elements .rightelements .button .three{
+    display:flex;
+    flex-direction:row;
+    height:70px;
+
+}
+.elements .rightelements .button .three>h4{
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 110px;
+    height: 50px;
+    background-color: rgb(236, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.elements .rightelements .button .three>p{
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    background-color:rgb(236, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:12px;
+}
+.elements .rightelements .button .three>span{
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 70px;
+    height: 25px;
+    background-color: rgb(236, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:12px; 
+}
+
+.elements .rightelements .button .four{
+    display:flex;
+    flex-direction:row;
+    height:70px;
+
+}
+.elements .rightelements .button .four>p{
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 190px;
+    height: 40px;
+    background-color: rgb(236, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.elements .rightelements .button .four>span{
+    color:rgb(236, 59, 59);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 190px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:12px; 
+}
+
+.elements .rightelements .button .five{
+    display:flex;
+    flex-direction:row;
+    height:70px;
+
+}
+.elements .rightelements .button .five>p{
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 190px;
+    height: 30px;
+    background-color: rgb(236, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.elements .rightelements .button .five>span{
+    color:rgb(236, 59, 59);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 190px;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:12px; 
+}
+
+.elements .rightelements .button .six{
+    display:flex;
+    flex-direction:row;
+    height:70px;
+    position:relative;
+
+}
+.elements .rightelements .button .six .and{
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(236, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.elements .rightelements .button .six .and>p{
+    color:white;
+}
+.elements .rightelements .button .six>div>i{
+    position:absolute;
+    top: 20px;
+    left:130px;
+    font-size:13px;
+    
+}
+.elements .rightelements .button .six>.and>i{
+    position:absolute;
+    top: 20px;
+    left:20px;
+    font-size:13px;
+}
+.elements .rightelements .button .six div{
+    color:rgb(236, 59, 59);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:12px; 
+}
+
+.elements .rightelements .button .seven{
+    display:flex;
+    flex-direction:row;
+    height:70px;
+
+}
+     .button .seven>p{
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 120px;
+    height: 45px;
+    background-color: rgb(236, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity:0.3; 
+}
+.elements .rightelements .button .seven>span{
+    color:rgb(236, 59, 59);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 120px;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:12px; 
+    opacity:0.3;
+}
+.elements .rightelements .forms{
+    width:100%;
+    height:500px;
+}
+.elements .rightelements .forms h2{
+    font-size:22px;
+    color:rgb(53, 51, 51);
+    margin-bottom:12px;
+}
+.elements .rightelements .forms .input input{
+    width:150px;
+    height:35px;
+    border-radius:5px;
+}
+.elements .rightelements .forms .input2 select{
+    width:300px;
+    height:35px;
+    border-radius:10px;
+    margin-top:19px;
+}
+
+.elements .rightelements .forms .radio{
+    display:flex;
+    flex-direction: row;
+    margin-top:20px;
+    margin-right:52px;
+
+}
+.elements .rightelements .forms .radio>input{
+    width:140px;
+    height:20px;
+    margin-bottom:15px;
+    
+}
+.elements .rightelements .forms .check>input{
+    width:50px;
+    height:20px;
+    margin-bottom:17px;
+    
+}
+.elements .rightelements .forms .text>p{
+    color:white;
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 150px;
+    height: 45px;
+    background-color: rgb(236, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:15px;
+    float:left;
+    margin-right:12px;
+}
+.elements .rightelements .forms .text>span{
+    color:rgb(236, 59, 59);
+    border: 2px solid rgb(223, 28, 28);
+    border-radius: 5px;
+    width: 120px;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:15px;
+    margin-left:42px;
+}
+.elments .rightelements .imagesalls{
+    width:100%;
+    height:600px;
+    display:flex;
+    flex-direction: column;
+}
+.elments .rightelements .imagesalls .great>h6{
+    font-size:20px;
+}
+.rightelements .imagesalls .great{
+    width:100%;
+    height:200px;
+}
+
+.rightelements .imagesalls .great h6{
+    font-size:23px;
+    color:rgb(36, 35, 35);
+}
+.rightelements .imagesalls .great>img{
+    width:100%;
+    border-radius:10px;
+    margin-top:12px;
+}
+.rightelements .imagesalls .small{
+    width:100%;
+    height:350px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rightelements .imagesalls .small>img{
+    width:118px;
+    height:90px;
+    border-radius:5px;
+}
+.rightelements .LeftRight{
+    width:100%;
+    height:700px;
+    display:flex;
+    flex-direction: column;
+}
+.rightelements .LeftRight h3{
+    margin-bottom:12px;
+    color:rgb(31, 30, 30);
+}
+.rightelements .LeftRight .Left{
+    width:100%;
+    height:330px;
+}
+.rightelements .LeftRight .Left .leftone{
+    float:left;
+}
+.rightelements .LeftRight .Left .leftone>img{
+    width:135px;
+    height:90px; 
+    border-radius:10px;
+    margin-right:15px;
+    margin-bottom:10px;
+}
+.rightelements .LeftRight .Left .lefttwo>p{
+    color:gray;
+    font-size:18px;
+}
+
+.rightelements .LeftRight .Right{
+    width:100%;
+    height:300px;
+    
+}
+.rightelements .LeftRight .Right .righttwo{
+    width:100%;
+    height:400px;
+}
+.rightelements .LeftRight .Right .rightone>img{
+    width:135px;
+    height:90px; 
+    border-radius:10px;
+}
+.rightelements .LeftRight .Right .rightone{
+    float:right;
+    width: 150px;
+    height:90px;
+    margin-left:19px;
+
+}
+.rightelements .LeftRight .Right .righttwo>p{
+    color:gray;
+    font-size:18px;
+}
+
+.rightelements .box{
+    width:100%;
+    height:280px;
+}
+.rightelements .box h2{
+    font-size:20px;
+    color:rgb(37, 36, 36);
+    margin-bottom:12px;
+}
+.rightelements .box>div{
+    border:1px solid rgb(197, 186, 186);
+    width:100%;
+    height:200px;
+    display:flex;
+    align-items: center;
+    
+}
+.rightelements .box>div span{
+    color:gray;
+    font-size:18px;
+    padding:12px;
+
+}
+.rightelements .prefor{
+    width:100%;
+    height:500px;
+}
+.rightelements .prefor h2{
+    font-size:22px;
+    color:rgb(43, 39, 39);
+    margin-bottom:12px;
+}
+.rightelements .prefor div{
+    border:1px solid rgb(194, 180, 180);
+    background-color:rgb(240, 244, 245);
+    width:370px;
+    height:200px;
+    border-radius:7px;
+    color:gray;
+    overflow: scroll; 
+}
